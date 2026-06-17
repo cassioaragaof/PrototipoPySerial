@@ -1,0 +1,13 @@
+# Pastas de ambiente
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Configurações de IDE
+.vscode/
+.idea/
+
+# Arquivos de log ou temp
+*.log
+*.tmp
