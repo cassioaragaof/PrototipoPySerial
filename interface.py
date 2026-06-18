@@ -4,7 +4,7 @@ from PyQt6.QtCore import Qt, QRectF, QTimer
 from PyQt6.QtWebEngineWidgets import QWebEngineView
 
 # =======================================================
-# CÓDIGO DO MAPA REAL
+# CÓDIGO DO MAPA
 # =======================================================
 HTML_MAPA = """
 <!DOCTYPE html>
