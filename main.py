@@ -9,7 +9,7 @@ import serial.tools.list_ports
 from PyQt6.QtWidgets import QApplication
 from PyQt6.QtCore import QThread, pyqtSignal
 
-from Prototipo_PySerial.interface import TelaDashboard 
+from interface import TelaDashboard
 
 def buscar_porta_arduino():
     portas = serial.tools.list_ports.comports()
