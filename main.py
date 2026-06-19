@@ -35,13 +35,13 @@ class LeitorSerial(QThread):
             
             try:
                 ser = serial.Serial(porta, 9600, timeout=1)
-                
                 self.status_conexao.emit(True) 
                 
                 while True:
                     try:
                         if ser.in_waiting > 0:
-                            dado = ser.readline().decode('utf-8').strip()
+                            # 'errors=ignore' evita o travamento (crash) por lixo gerado por ruído no cabo USB
+                            dado = ser.readline().decode('utf-8', errors='ignore').strip()
                             
                             if "," in dado:
                                 partes = dado.split(',')

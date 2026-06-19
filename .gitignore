@@ -1,13 +1,32 @@
-# Pastas de ambiente
+# ==========================================
+# Ignorar Ambientes Virtuais do Python
+# ==========================================
 venv/
-.venv/
-__pycache__/
-*.pyc
+env/
+.env
 
-# Configurações de IDE
+# ==========================================
+# Ignorar Ficheiros Temporários do Python
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ==========================================
+# Ignorar Ficheiros Gerados pela Telemetria
+# ==========================================
+log_enduro_baja.csv
+*.csv
+*.log
+
+# ==========================================
+# Ignorar Configurações Locais de Editores
+# ==========================================
 .vscode/
 .idea/
 
-# Arquivos de log ou temp
-*.log
-*.tmp
+# ==========================================
+# Ignorar Ficheiros de Sistema Operativo
+# ==========================================
+.DS_Store
+Thumbs.db
